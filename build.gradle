@@ -10,7 +10,9 @@ subprojects {
     }
 
     group = 'org.srcdeps.test.gradle'
+    println "version before it has been set: "+ version
     version = '1.0-SNAPSHOT'
+    println "version set to "+ version
 
     jar {
         manifest.attributes provider: 'gradle'
